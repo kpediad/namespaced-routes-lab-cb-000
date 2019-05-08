@@ -9,7 +9,7 @@ class ArtistsController < ApplicationController
 
   def new
     binding.pry
-    redirect_to artists_path, alert: "Feature is disabled!" if Preference.first.allow_create_artists
+    redirect_to artists_path, alert: "Feature is disabled!" if !Preference.first.allow_create_artists
     @artist = Artist.new
   end
 
