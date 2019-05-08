@@ -8,5 +8,6 @@ class Admin::PreferencesController < ApplicationController
   end
 
   def update
+    Preference.first.update(params[:preference])
   end
 end
