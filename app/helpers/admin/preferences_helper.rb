@@ -7,5 +7,5 @@ module Admin::PreferencesHelper
     else
       'Descending'
     end
-  end  
+  end
 end
