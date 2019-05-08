@@ -4,6 +4,7 @@ class Admin::PreferencesController < ApplicationController
   end
 
   def edit
+    @prefs = Preference.first
   end
 
   def update
