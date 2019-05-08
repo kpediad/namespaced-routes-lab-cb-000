@@ -1,5 +1,5 @@
 <h1>Edit System Preferences</h1>
-<%= form_for @prefs do |f| %>
+<%= form_for @prefs url: "/admin/preferences/1/edit" do |f| %>
   <%= f.label :artist_sort_order %>
   <%= f.radio_button :preference, :artist_sort_order, "ASC" %>
   <%= f.radio_button :preference, :artist_sort_order, "DESC" %>
