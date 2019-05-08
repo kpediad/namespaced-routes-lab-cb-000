@@ -9,5 +9,6 @@ class Admin::PreferencesController < ApplicationController
 
   def update
     Preference.first.update(params[:preference])
+    redirect_to admin_preferences
   end
 end
