@@ -6,6 +6,6 @@ class Admin::PreferencesController < ApplicationController
   def edit
   end
 
-  def Update
+  def update
   end
 end
